@@ -210,7 +210,7 @@ let third = `<div class="card mb-3 mx-auto shadow p-3 mb-5 rounded" style="max-w
   function fetchDetails() {
     let city_name = city.value;
     let api_key = "dd0152d6c25dfb26687b7ad5688af0c8"
-    let url = `http://api.openweathermap.org/data/2.5/find?q=${city_name}&units=metric&appid=${api_key}`
+    let url = `https://api.openweathermap.org/data/2.5/find?q=${city_name}&units=metric&appid=${api_key}`
     fetch(url).then(res => {
       if (!(res.ok)) {
         throw new Error("Fetch failed")
